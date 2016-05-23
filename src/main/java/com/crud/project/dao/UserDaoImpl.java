@@ -16,7 +16,7 @@ import java.util.List;
 public class UserDaoImpl implements UserDao {
 
     private SessionFactory sessionFactory;
-    private static final int limitResultsPerPage = 5;
+    private static final int limitResultsPerPage = 10;
 
     @Autowired
     public void setSessionFactory(SessionFactory sessionFactory) {

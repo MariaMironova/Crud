@@ -75,12 +75,10 @@
 
 <form:form action="${addAction}" commandName="user">
     <table class="features-table">
-        <c:if test="${!empty user.name}">
-            <tr>
+        <tr>
                 <td class="param"><form:label path="id">ID</form:label></td>
                 <td><form:input readonly="true" path="id" value="${user.id}" /></td>
-            </tr>
-        </c:if>
+        </tr>
         <tr>
             <td class="param">
                 <form:label path="name">
@@ -117,10 +115,10 @@
             <td>
                 <form:checkbox path="admin" value="${user.admin}"/>
             </td>
-
-
         </tr>
-
+        <tr>
+            <td><form:input type="hidden" path="createDate" value="${user.createDate}" /></td>
+        </tr>
         <tr>
             <td colspan="2" style="text-align: center">
                 <input type="submit" value="<spring:message text="Edit User"/>"/>

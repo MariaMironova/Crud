@@ -2,6 +2,7 @@ package com.crud.project.model;
 
 import org.hibernate.annotations.Type;
 
+import java.sql.Timestamp;
 import java.util.Date;
 import javax.persistence.*;
 
@@ -26,9 +27,8 @@ public class User {
     @Column(name = "IS_ADMIN")
     private boolean isAdmin;
 
-    @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "CREATE_DATE")
-    private Date createdDate;
+    private Timestamp createDate;
 
     public int getId() {
         return id;
@@ -62,12 +62,12 @@ public class User {
         isAdmin = admin;
     }
 
-    public Date getCreatedDate() {
-        return createdDate;
+    public Timestamp getCreateDate() {
+        return createDate;
     }
 
-    public void setCreatedDate(Date createdDate) {
-        this.createdDate = createdDate;
+    public void setCreateDate(Timestamp createDate) {
+        this.createDate = createDate;
     }
 
     public String getEmail() {

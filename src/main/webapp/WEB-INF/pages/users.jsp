@@ -118,7 +118,7 @@
                     <td>${user.email}</td>
                     <td>${user.age}</td>
                     <td>${user.admin}</td>
-                    <td>${user.createdDate}</td>
+                    <td>${user.createDate}</td>
                     <td><a href="<c:url value='/edit/${user.id}'/>">Edit</a></td>
                     <td><a href="<c:url value='/remove/${user.id}'/>">Delete</a> </td>
                 </tr>

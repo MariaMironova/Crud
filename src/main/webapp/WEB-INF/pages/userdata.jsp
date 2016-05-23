@@ -86,7 +86,7 @@
         <td>${user.email}</td>
         <td>${user.age}</td>
         <td>${user.admin}</td>
-        <td>${user.createdDate}</td>
+        <td>${user.createDate}</td>
     </tr>
 </table>
 </body>

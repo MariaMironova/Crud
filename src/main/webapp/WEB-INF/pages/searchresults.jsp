@@ -13,6 +13,7 @@
         h1 {
             margin-top: 10px;
             margin-bottom: 0;
+            text-align: center;
         }
 
         .features-table
@@ -86,7 +87,7 @@
                 <td><a href="/userdata/${user.id}" target="_blank">${user.name}</a></td>
                 <td>${user.age}</td>
                 <td>${user.admin}</td>
-                <td>${user.createdDate}</td>
+                <td>${user.createDate}</td>
                 <td><a href="<c:url value='/edit/${user.id}'/>">Edit</a></td>
                 <td><a href="<c:url value='/remove/${user.id}'/>">Delete</a> </td>
             </tr>
